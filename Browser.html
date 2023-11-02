@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+          <head>
+                    <title>
+                              Google
+                    </title>
+                    <style>
+                    /*CSS Styles*/
+                    /*Style for Container*/
+                    .container
+                    {
+                              width:80%;
+                              margin:0 auto;
+                              border:2px solid #ccc;
+                              border-radius:5px;
+                              overflow:hidden;
+                    }
+                    /*Style for Header*/
+                    header
+                    {
+                              background-color:#f2f2f2;
+                              padding:10px;
+                              display:flex;
+                              justify-content:space-around;
+                              flex-direction:coloumn;
+                    }
+                    /*Style for Navigation Links*/
+                    nav a
+                    {
+                              color:#333;
+                              text-decoration:none;
+                              font-weight:bold;
+                    }
+                    /*Style for Hover effect on Navigation links*/
+                    nav a:hover
+                    {
+                              text-decoration:underline;
+                    }
+                    /*Style for Button*/
+                    .minimize, .maximize, .close
+                    {
+                              height:10px;
+                              width:10px;
+                              margin-radius:50px;
+                    }
+                    /*Style for Minimizing Button*/
+                    .minimize
+                    {
+                              background-color:#ff9800;
+                              color:#ff9800;
+                    }
+                    /*Style for Maximize Button*/
+                    .maximize
+                    {
+                              background-color:#4caf50;
+                    }
+                    /*Style for Close Button*/
+                    .close
+                    {
+                               background-color:#f44336;
+                    }
+                    /*Form Style*/
+                    form
+                    {
+                              display:flex;
+                              flex-direction:coloumn;
+                              align-items:center;
+                              padding:10px;
+                    }
+                    /*Styling Search inputs*/
+                    input[type="text"]
+                    {
+                              padding:10px;
+                              border:none;
+                              border-radius:5px;
+                              margin-right:5px;
+                              width:50%;
+                    }
+                    /*Search Button Style*/
+                    button[type="submit"]
+                    {
+                              color:#333;
+                              padding:10px;
+                              border:none;
+                              border-radius:5px;
+                              margin-right:5px;
+                              cursor:pointer;
+                              background-color:#f2f2f2;
+                    }
+                    /*Hover effect on buttons*/
+                    button[type="submit"]
+                    button:not([type="submmit"]):hover
+                    {
+                              background-color:#333;
+                              color:#fff;
+                    }
+                    /*Padding Main Content*/
+                    main
+                    {
+                              padding:10px;
+                    }
+                    h1
+                    {
+                              font-size:36px;
+                              color:#333;
+                              margin-bottom:10px;
+                    }
+                    /*Styling Main Paragraph*/
+                    p
+                    {
+                              font-size:18px;
+                              color:#666;
+                    }
+                 </style>
+          </head>
+          <body>
+                    <div class="container">
+                              <div class="buttons">
+                                        <button class="minimize"></button><!---Minimize--->
+                                        <button class="maximize"></button><!---Maximize--->
+                                        <button class="close"></button><!---Close--->
+                              </div>
+                              <header>
+                                        <nav>
+                                                  <!---Nav Elements--->
+                                                  <a href="#">GMail</a>
+                                                  <a href="#">Images</a>
+                                                  <a href="#">Apps</a>
+                                                  <a href="#">Notifications</a>
+                                                  <a href="#">Accounts</a>
+                                        </nav>
+                                        <!---Search Bar--->
+                                        <form>
+                                                  <input type="text"placeholder="https://www.Google.com"/>
+                                                  <button type="submit">Search</button>
+                                        </form>
+                              </header>
+                              <main>
+                                        <!---Heading--->
+                                        <h1>Welcome to Google</h1>
+
+                                        <!---Paragraph--->
+                                        <p>Google is a Website where we can everything.</p>
+                              </main>
+                    </div>
+
+          </body>
+</html>
