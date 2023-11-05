@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible"content="ie=edge">
+        <title>Google Logo by HTML & CSS</title>
+        <style>
+            #google-logo
+            {
+                position: relative;
+                border-top: 50px solid orange;
+                border-right: 50px solid green;
+                border-bottom: 50px solid blue;
+                border-left: 50px solid white;
+                border-radius: 100%;
+                background-color: black;
+                width: 150px;
+                height: 150px;
+                padding: 0;
+                margin: 10vh auto 0;
+            }
+            #google-logo::before
+            {
+                content:" ";
+                z-index: 100;
+                position:absolute;
+                top:50%;
+                right: -42.5px;
+                transform: translateY(-50%);
+                width: 122.5px;
+                height: 50px;
+                background: green;
+            }
+            #google-logo::after
+            {
+                content: " ";
+                z-index: 105;
+                position: absolute;
+                border-top: 46px solid transparent;
+                border-right: 105px solid white;
+                top:-27px;
+                right: -47px;
+                width: 90px;
+                height: 31px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="google-logo">
+        </div>
+    </body>
+</html>
